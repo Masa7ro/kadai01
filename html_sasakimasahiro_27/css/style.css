@@ -1,0 +1,389 @@
+/* ここから下に記載していく */
+
+/* 共通 */
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c');
+
+セレクタ {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+
+body {
+    color: #391400;
+    background-color: lightgray;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 100%;
+    line-height: 150%;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    border: 0;
+}
+
+/* ヘッダー */
+header {
+    width: 100%;
+    background-color: #F6D021;
+    padding: 0;
+    /* ロゴとメニューを横に並べる */
+    display: flex;
+    /* headerの要素を中央に並べる */
+    align-items: center;
+    /* headerの位置固定 */
+    position: fixed;
+}
+
+/* SNSアイコンを縦に */
+
+.side-menu {
+    position: fixed;
+    top: 400px;
+}
+
+.side-menu ul {
+    flex-direction: column-reverse;
+}
+
+.side-menu ul li a {
+    padding: 0px;
+}
+
+.side-menu ul li a img {
+    width: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.catch {
+    /* パディング */
+    padding-left: 20px;
+    margin-top: 00px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+li {
+    margin-left: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: #391400;
+}
+
+/* マウスを乗せると半透明に */
+
+a:hover {
+    opacity: 0.5;
+}
+
+.CAT_logo {
+    width: 12%;
+    height: 12%;
+}
+
+/* メインビジュアル */
+.main-visual {
+    margin: 0 auto;
+    width: fit-content;
+}
+
+/* About */
+
+.content-title {
+    color: #391400;
+    font-size: 7vh;
+    margin-top: 100px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.about-title {
+    font-size: 3vh;
+    margin-left: 40px;
+    align-items: left;
+}
+
+.about-body {
+    font-size: 2vh;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.about-body {
+    font-size: 2vh margin-top
+}
+
+.about-parent {
+    display: grid;
+    width: 1000px;
+    grid-template-columns: auto auto;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.about-child-a {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.about-child-b {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.about-image {
+
+    margin-left: 80px;
+    border-radius: 3%;
+}
+
+/* COURSE */
+
+.course-title {
+    font-size: 3vh;
+    margin: 60px;
+
+    text-align: center;
+    line-height: 150%;
+}
+
+
+/* NEWS */
+
+.news-list {
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.news-items-a {
+    width: 90%;
+    flex: 1;
+
+}
+
+.news-items-b {
+    width: 90%;
+    flex: 1;
+
+}
+
+.news-items-c {
+    width: 90%;
+    flex: 1;
+
+}
+
+.news-image {
+    width: 80%;
+    height: 80%;
+    border-radius: 3%;
+
+}
+
+.news-body {
+    width: 80%;
+    text-align: left;
+}
+
+.day {
+    font-size: 10px;
+    margin-bottom: 50px;
+}
+
+.news-more {
+    width: 100px;
+    text-align: center;
+    font-size: 12px;
+    color: #391400;
+    display: block;
+    padding: 10px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 3px 3px #391400;
+    margin: 0 auto;
+    transition: .3s;
+}
+
+.news-more:hover {
+    animation: pulsation .7s alternate infinite;
+}
+
+@keyframes pulsation {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+/* ACCESS */
+
+/* Google Mapを囲う要素 */
+.map {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 30%;
+}
+
+.map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: grayscale(90%);
+    transition: all 0.7s ease;
+}
+
+
+.address {
+    width: 50%;
+    text-align: left;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.address th,
+.address td {
+    border: 0.3px solid #391400;
+    padding: 10px;
+    background-color: #fff;
+
+}
+
+.address th {
+    font-weight: bold;
+    background-color: #fff;
+}
+
+/* CONTACT */
+
+.contact-title-catch {
+    text-align: center;
+    font-size: 24px;
+    color: #391400;
+    display: block;
+    padding-bottom: 20px;
+}
+
+.contact-title-body {
+    text-align: center;
+    font-size: 16px;
+    color: #391400;
+    display: block;
+    padding-bottom: 40px;
+}
+
+.contact-title-chui {
+    text-align: center;
+    font-size: 12px;
+    color: #391400;
+    display: block;
+    padding-bottom: 60px;
+}
+
+/* コンタクトフォーム */
+
+.contact-form {
+    margin: 0 auto;
+}
+
+.contact-form-table,
+.contact-form {
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+.contact-form th {
+    text-align: left;
+    color: #391400;
+    width: 30%;
+    padding: 16px 16px;
+    vertical-align: middle;
+}
+
+.contact-form td {
+    width: 70%;
+}
+
+.contact-form input:not(input[type="radio"]),
+.contact-form textarea {
+    width: 100%;
+    border-radius: 5px;
+    border-width: thin;
+
+}
+
+.contact-form-select {
+    width: 101.5%;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+    border-width: thin;
+}
+
+.contact-form input:not(input[type="radio"]) {
+    height: 40px;
+}
+
+.contact-form textarea {
+    height: 100px;
+    margin-top: 16px;
+}
+
+.contact-form label {
+    display: block;
+}
+
+
+.submit-btn {
+    width: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: #391400;
+    display: block;
+    padding: 10px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 3px 3px #391400;
+    margin: 20px auto;
+    transition: .3s;
+    /* この送信ボタンの左右幅を小さくしたい */
+    
+
+
+
+}
+
+.CAT-logo-second {
+    align-items: center;
+    width: 5%;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin: top 40px; ;
+}
+
+/* フッター */
+.footer {
+    font-size: 10px;
+    color: #391400;
+    text-align: center;
+    padding: 30px 0;
+}
+
